@@ -34,14 +34,12 @@
 #'   x_yearly = 12000,
 #'   immediate = TRUE
 #' )
-
 get_final_value <- function(n_per,
                             v_0,
                             exp_return,
                             compound,
                             x_yearly = 0,
                             immediate = TRUE) {
-
   # Expected return in percent
   exp_return_pct <- exp_return / 100
 
