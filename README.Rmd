@@ -13,7 +13,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-# simulreturns
+# simulreturns <img src="man/figures/logo.png" align="right" height="139" />
 
 <!-- badges: start -->
 <!-- badges: end -->
@@ -68,13 +68,13 @@ summary(FINAL_VALUE_CMP_IMM_ANNUITIES)
 ```{r plot_final_value, echo = FALSE}
 library(ggplot2)
 
-FINAL_VALUE_CMP_IMM_ANNUITIES %>% 
+FINAL_VALUE_CMP_IMM_ANNUITIES %>%
   ggplot(aes(x = period, y = final_value)) +
   geom_line(linewidth = 1.1) +
   theme_light() +
   labs(
     title = "Investment final value, with compound interest and immediate annuities",
-    subtitle = paste0("Number of per.: ",.n_per, ", init. capital: ", .v_0, " units, exp. return: ", .exp_return, "%/year, annuities: ", .x_yearly, " units"),
+    subtitle = paste0("Number of per.: ", .n_per, ", init. capital: ", .v_0, " units, exp. return: ", .exp_return, "%/year, annuities: ", .x_yearly, " units"),
     x = "Periods",
     y = "Final value after x periods (in units of wished currency)",
     caption = paste(
@@ -86,7 +86,6 @@ FINAL_VALUE_CMP_IMM_ANNUITIES %>%
   theme(
     legend.position = "bottom", axis.text = element_text(size = 12),
     axis.title = element_text(size = 12)
-  ) 
-  
+  )
 ```
 
