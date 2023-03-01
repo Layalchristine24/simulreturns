@@ -1,5 +1,21 @@
 <!-- NEWS.md is maintained by https://cynkra.github.io/fledge, do not edit -->
 
+# simulreturns 0.1.0.9007
+
+## Bug fixes
+
+- Style file.
+
+## Documentation
+
+- Build README and add logo.
+
+## Uncategorized
+
+- Merge branch 'main' of https://github.com/Layalchristine24/simulreturns into simulreturns_lyl.
+
+
+
 # simulreturns 0.1.0.9006
 
 ## Documentation
